@@ -8,19 +8,18 @@
 }
 
 body {
-    background: var(--collor-primary);
+    background: var(--color-primary);
 }
-
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-gap: 8px;
-    grid-template-areas: 
+    grid-template-areas:
     "menu menu menu menu menu menu menu menu menu menu menu menu"
     "notification notification notification notification sales sales sales sales sales sales balance balance"
     "notification notification notification notification sales sales sales sales sales sales balance balance"
-    "week week week week sales sales sales sales sales sales balance balance "
+    "week week week week sales sales sales sales sales sales balance balance"
     "week week week week sales sales sales sales sales sales devs devs"
     "week week week week sales sales sales sales sales sales devs devs"
     "product product product product product timeline timeline timeline timeline timeline timeline timeline"
@@ -30,22 +29,149 @@ body {
     width: 800px;
     height: 600px;
     margin: 15px auto;
-    background: var(--color-secondary);
-    border: 1px solid var(--color-primary); 
-
-    /* box-shadow: var(--color-shadows); */
-}
-.container div{
-    /*background: var(--color-primary);*/
-   border-radius: 5px;
+    background: var(--color-primary);
+    border-radius: 5px;
 }
 .item_1{
-    background: red;
+    /* background: red; */
     grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box1_item1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-secundary);
+    border-radius: 5px;
+    border: 1px var(--color-primary);
+}
+.box1_item1 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box1_item1 li {
+    padding: 10px;
+    list-style: none;
+}
+.box1_item1 a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: var(--color-font);
+}
+.box1_item1 i{
+    position: absolute;
+    margin-left: 25%;
+}
+input {
+    margin-left: 10%;
+}
+.search_button input {
+    height: 50%;
+    width: 90%;
+    padding: 5% 9%;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+}
+
+.search_button1::placeholder {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--color-font);
+    font-family: sans-serif;
+}
+
+.box2_item1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right ,var(--color-radient-1), var(--color-radient-2));
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.box2_item1 .icons_item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box2_item1 ul {
+    list-style: none;
+}
+.box2_item1 .icons_item1 i {
+    font-size: 1.5em;
+    padding: 15px;
+}
+.box2_item1 .text_item1 {
+    width: 300px;
+}
+.box2_item1 .text {
+    width: 150px;
+    display: flex;
+    line-height: 20px;
+    flex-direction: column;
+    margin-left: 22%;
+    text-align: right;
+}
+.box2_item1 .icon_profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    margin-right: 8%;
+}
+.box2_item1 .text_item1 h4 {
+    font-size: .9em;
+    font-weight: 200px;
+}
+.box2_item1 .text_item1 p {
+    font-size: .8em;
 }
 .item_2{
-    background: blue;
     grid-area: notification;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.box1_item2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px var(--color-primary);
+    background: var(--color-radient-1);
+}
+.text p{
+    font-size: .8em;
+    line-height: 20px;
+}
+.text h4 {
+    font-size: .9em;
+    font-weight: 100px;
+}
+.box1_item2 .icon_profile i {
+    font-size: 2.5em;
+    position: absolute;
+    margin-top: 13%;
+}
+
+.box1_item2.icon1_profile i {
+    font-size: 2.5em;
+    position: absolute;
+    margin-top: 13%;
 }
 .item_3{
     background: orange;
@@ -71,13 +197,13 @@ body {
     background: darkgoldenrod;
     grid-area: timeline;
 }
-@media (width < 600px) {
+/* @media (width < 600px) {
     .container {
         width: 100%;
         margin: 0;
         padding: 0 5px;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
         "menu menu"
         "notification notification"
         "sales balance"
@@ -88,5 +214,4 @@ body {
     }
     .container div {
         border-radius: 8px
-    };
-}
+    }; */

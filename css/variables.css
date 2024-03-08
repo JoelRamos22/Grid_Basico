@@ -1,5 +1,9 @@
 :root {
     --color-primary : #ececec;
     --color-secundary : #fff;
+    --color-font : black;
     --color-shadows : 3px 3px 5px rgba(0, 0, 0, 0.122);
+    --color-radient-1 : #74daf7;
+    --color-radient-2 :   #d8ed71;
+    --color-radient-3 :   #AEF7AE;
 }
